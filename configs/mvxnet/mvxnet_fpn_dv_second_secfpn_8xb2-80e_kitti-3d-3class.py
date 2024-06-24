@@ -36,6 +36,7 @@ model = dict(
         norm_cfg=dict(type='BN', requires_grad=False),
         num_outs=5),
     pts_voxel_encoder=dict(
+        # VFE：Voxel feature encoder
         type='DynamicVFE',
         in_channels=4,
         feat_channels=[64, 64],
